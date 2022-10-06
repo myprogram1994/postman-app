@@ -1,0 +1,116 @@
+.overall_rating{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    margin-left: 80px;
+    margin-top: 2px;
+}
+.reviews{
+   
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+margin-left: 87px;
+
+}
+.review{
+    padding-left: 3px;
+}
+.main_conainer{
+    
+    margin: 8px;
+}
+.reviews_conatiner{
+    margin-top: -30px;
+    margin-bottom: 22px;
+}
+.box{
+    display: flex;
+}
+.feauture{
+    width:171px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    
+    
+    color: #000000;
+    
+    
+
+
+
+}
+.circle_rating{
+    margin-left: 27px;
+}
+.rating_value{
+    margin-left: 15px;
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+
+color: #26BA6E;
+
+
+
+}
+
+hr{
+    margin:5px;
+    /* margin-bottom: 20px; */
+    /* border: 0; */
+    border-top: 1px solid #eee;
+      
+}
+.feature_circle_progress{
+    margin-left:2px
+}
+
+.square_box_circle{
+    margin-left: -45px;
+    margin-top: -12px;
+}
+.overall_rating_square_circle{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    margin-left: 42px;
+    margin-top: 2px;
+}
+.reviews_square_circle{
+ 
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+margin-left: 2px;
+   
+}
+.reviews_circle_square{
+    margin-left: 41px;
+}
