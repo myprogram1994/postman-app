@@ -1,0 +1,39 @@
+.form {
+  border: "none";
+
+  display: flex;
+  flex-direction: row;
+}
+.from div {
+  font-size: 12px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.select {
+  border-radius: 0px;
+  border: 1px solid #d4d4d4;
+  background-color: #ececec;
+  font-weight: 600;
+  font-size: 12px;
+  width: 120px;
+  height: 40px;
+}
+
+.input-box {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid #d4d4d4;
+  background-color: #ececec;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  margin-left: 5px !important;
+}
+/*
+    */

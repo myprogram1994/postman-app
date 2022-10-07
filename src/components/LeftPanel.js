@@ -1,5 +1,7 @@
 import "./LeftPanel.css";
 import { useState } from "react";
+
+import CollectionTmage from "./CollectionImage"
 const LeftPanel = () => {
   const [leftsidebtn, setleftButton] = useState(5);
   const getClassName = (val) => (val === leftsidebtn ? "active1" : "");
@@ -230,6 +232,12 @@ const LeftPanel = () => {
                   <p className="history-text">History</p>
                 </div>
               </div>
+              <div style={{flexDirection:'row', marginLeft:85,marginTop:-316}}>
+              
+              <CollectionTmage />
+                            
+                          </div>
+              
             </div>
           </div>
         </div>
