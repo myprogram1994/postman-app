@@ -1,0 +1,37 @@
+.table-conatiner {
+  border: 1px solid #efefef;
+  height: 35px;
+  display: flex;
+
+  flex-direction: row;
+}
+
+.checkbox {
+  border: 1px solid #efefef;
+  width: 30px;
+  padding: 5px;
+}
+.inputbox {
+  border-right: 1px solid #efefef;
+  text-align: center;
+  margin-top: 5px;
+  width: 290px;
+}
+.inputbox-secand {
+  border-right: 1px solid #efefef;
+  text-align: center;
+  margin-top: 5px;
+  width: 290px;
+}
+
+.inputbox-third {
+  border-right: 1px solid #efefef;
+  text-align: center;
+  margin-top: 5px;
+  width: 290px;
+}
+
+.input {
+  width: 270px;
+  border: #efefef;
+}

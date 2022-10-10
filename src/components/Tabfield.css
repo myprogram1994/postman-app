@@ -1,0 +1,16 @@
+.tab-main-conatiner{
+    
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.tab-main-conatiner div{
+padding: 5px;
+}
+.activebtn {
+border-bottom: 2px solid #e76537;   
+background-color: #fff;
+
+  }
