@@ -5,7 +5,7 @@ import "./Tabfield.css";
 import ParamsTable from "./ParamsTable";
 import JsonBox from "./JsonBox"
 const Tabfiled = () => {
-  const [value, setValue] = useState(3);
+  const [value, setValue] = useState(1);
 
 
   const getClassName = (val) => (val === value ? "activebtn" : "");
@@ -27,6 +27,7 @@ const Tabfiled = () => {
       </div>
       <div hidden={value !== 2}>
      
+    <ParamsTable />
       </div>
       <div hidden={value !== 3}>
       <JsonBox />

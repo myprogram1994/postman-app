@@ -1,8 +1,11 @@
 import "./JsonBox.css";
-
+import { useContext } from "react";
+import { DataContext } from "../DataFile/DataProvider";
 const JsonBox = () => {
+  const { setjsonData } = useContext(DataContext);
+
   const onValueChange = (e) => {
-    console.log(e.target.value);
+    setjsonData(e.target.value);
   };
 
   return (

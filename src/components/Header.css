@@ -1,128 +1,129 @@
 
 .header_top_box1 {
-    padding: 1px;
-    display: flex;
-    flex-direction: row;
-  }
-  .header_top_box1 div {
-    padding: 5px;
-    font-size: 12px;
-    display: flex;
-    flex-direction: row;
-  }
+  padding: 1px;
+  display: flex;
   
-  .header_top_box2 {
-    padding: 1px;
-    display: flex;
-    flex-direction: row;
-  }
-  .header_top_box2 div {
-    display: flex;
-    flex-direction: row;
-  }
-  .home_text {
-    font-size: 15px;
-    line-height: 24px;
-    margin: 8px;
-    font-weight: 400;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
-      Arial, sans-serif;
-    color: rgb(33, 33, 33);
-    word-break: normal;
-  }
-  
-  .worksapce-text {
-    font-size: 15px;
-    margin: 8px;
-    line-height: 24px;
-    font-weight: 400;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
-      Arial, sans-serif;
-    color: rgb(33, 33, 33);
-    word-break: normal;
-  }
-  
-  .report-text {
-    font-size: 15px;
-    margin: 8px;
-    line-height: 24px;
-    font-weight: 400;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
-      Arial, sans-serif;
-    color: rgb(33, 33, 33);
-    word-break: normal;
-  }
-  
-  .explore-text {
-    font-size: 15px;
-    margin: 8px;
-    line-height: 24px;
-    font-weight: 400;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
-      Arial, sans-serif;
-    color: rgb(33, 33, 33);
-    word-break: normal;
-  }
-  .input_box {
-    margin: 8px;
-    margin-left: 350px;
-    background-color: #f2f2f2;
-  }
-  form.nosubmit {
-    border: none;
-    padding: 0;
-  }
-  
-  input.nosubmit {
-    width: 180px;
-    border: none;
-  
-    display: block;
-    padding: 8px 2px 6px 36px;
-    background: transparent
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
-      no-repeat 13px center;
-  }
-  
-  .cloud_icon {
-    margin: 8px;
-    margin-left: 230px;
-  }
-  .userbtn {
-    background-color: #097bed;
-    font-size: 10px;
-    font-weight: 600;
-    margin-top: 8px;
-    padding-left: 8px;
-    padding-top: 5px;
-    width: 55px;
-    margin-bottom: 12px;
-    margin-left: 6px;
-    border-radius: 3px;
-    color: "white";
-  }
-  
-  .setting_icon {
-    margin: 8px;
-  }
-  
-  .bell_icon {
-    margin: 10px;
-  }
-  
-  .upgrade-text {
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-weight: 600;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 28px;
-    width: 90px;
-    margin-bottom: 4px;
-    margin-left: 6px;
-  }
-  
+  flex-direction: row;
+}
+.header_top_box1 div {
+  padding: 5px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header_top_box2 {
+  padding: 1px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.header_top_box2 div {
+  display: flex;
+  flex-direction: row;
+}
+.home_text {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 8px;
+  font-weight: 400;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
+    Arial, sans-serif;
+  color: rgb(33, 33, 33);
+  word-break: normal;
+}
+
+.worksapce-text {
+  font-size: 15px;
+  margin: 8px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
+    Arial, sans-serif;
+  color: rgb(33, 33, 33);
+  word-break: normal;
+}
+
+.report-text {
+  font-size: 15px;
+  margin: 8px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
+    Arial, sans-serif;
+  color: rgb(33, 33, 33);
+  word-break: normal;
+}
+
+.explore-text {
+  font-size: 15px;
+  margin: 8px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica,
+    Arial, sans-serif;
+  color: rgb(33, 33, 33);
+  word-break: normal;
+}
+.input_box {
+  margin: 8px;
+  margin-left: 350px;
+  background-color: #f2f2f2;
+}
+form.nosubmit {
+  border: none;
+  padding: 0;
+}
+
+input.nosubmit {
+  width: 180px;
+  border: none;
+
+  display: block;
+  padding: 8px 2px 6px 36px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+.cloud_icon {
+  margin: 8px;
+  margin-left: 228px;
+}
+.userbtn {
+  background-color: #097bed;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 8px;
+  padding-left: 8px;
+  padding-top: 5px;
+  width: 55px;
+  margin-bottom: 12px;
+  margin-left: 6px;
+  border-radius: 3px;
+  color: "white";
+}
+
+.setting_icon {
+  margin: 8px;
+}
+
+.bell_icon {
+  margin: 10px;
+}
+
+.upgrade-text {
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 600;
+  height: 30px;
+  padding-top: 8px;
+  padding-left: 28px;
+  width: 90px;
+  margin-bottom: 4px;
+  margin-left: 6px;
+}

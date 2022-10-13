@@ -6,6 +6,7 @@ const Header = () => {
   return (
     
 <>
+<div className="header-main-div">
 <div className="header_top_box1">
 <div>File</div>
 <div>Edit</div>
@@ -54,6 +55,7 @@ const Header = () => {
 </div>
 
 <div className="upgrade-text">Upgrade</div>
+</div>
 </div>
 </>
   )
