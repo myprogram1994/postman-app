@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import CollectionTmage from "./CollectionImage"
 const LeftPanel = () => {
-  const [leftsidebtn, setleftButton] = useState(5);
+  const [leftsidebtn, setleftButton] = useState(1);
   const getClassName = (val) => (val === leftsidebtn ? "active1" : "");
   return (
     <>

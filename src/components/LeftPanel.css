@@ -6,19 +6,16 @@
   background-color: #fff;
   border-right: 2px solid #efefef;
   height: 1179px;
-  width: 380px;
-
+  width: 30%;
   position: fixed;
   z-index: 1;
   top: 1;
   left: 0;
-  overflow-x: hidden;
+  flex-wrap: nowrap;
   padding: 5px;
 }
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
+
+
 .inside {
   height: 1179px;
   width: 1130px;
@@ -33,7 +30,6 @@
 
 .top {
   background-color: #efefef;
-
   display: flex;
   align-items: center;
   text-align: center;
