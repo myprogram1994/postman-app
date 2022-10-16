@@ -5,8 +5,8 @@
 .sidebar {
   background-color: #fff;
   border-right: 2px solid #efefef;
-  height: 1179px;
-  width: 30%;
+  height: calc(100% - 100px);
+  width: 26%;
   position: fixed;
   z-index: 1;
   top: 1;
@@ -26,6 +26,7 @@
   display: flex;
   background-color: var(--background-color-secondary);
   z-index: 20;
+  
 }
 
 .top {
@@ -70,11 +71,10 @@
 }
 
 .collection {
-  line-height: var(--text-size-xl);
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
 }
 
 .api-text {
@@ -82,14 +82,14 @@
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
 }
 .environment-text {
   line-height: var(--text-size-xl);
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
 }
 
 .mockserver-text {
@@ -97,7 +97,7 @@
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
 }
 
 .monitor-text {
@@ -105,7 +105,7 @@
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
 }
 
 .history-text {
@@ -113,7 +113,8 @@
   text-align: center;
   flex: none;
   font-size: 12px;
-  margin-top: 1px;
+  margin-top:-8px ;
+  
 }
 
 .active1 {
@@ -122,8 +123,8 @@
 }
 
 .left-side {
-  width: 78px;
-  height: 600px;
+  width: 83px;
+  height: calc(100% - 100px);
   border-right: 2px solid #efefef;
 }
 
@@ -263,3 +264,14 @@ input.nosubmit {
   margin-bottom: 4px;
   margin-left: 6px;
 }
+
+
+/**/
+.input-box2{
+  
+  width: 240px;
+    padding: 3px;
+    border-radius: 0px;
+    border: 1px solid #d4d4d4;
+}
+
