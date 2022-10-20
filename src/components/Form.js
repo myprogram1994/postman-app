@@ -1,23 +1,25 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 
 import { DataContext } from '../DataFile/DataProvider';
 import "./Form.css"
 
-const Form = ({ onSendClick }) => {
+const Form = ({ onSendClick}) => {
     
 
-    const { data, setData } = useContext(DataContext);
+    const { data, setData,url,setUrl } = useContext(DataContext);
+
 
     const onUrlChange = (e) => {
+        
         setData({ ...data, url: e.target.value });
+        
     }
-
     const handleChange = (e) => {
         
         setData({ ...data, type: e.target.value });
-    }
 
+    }
     return (
         <>
 
@@ -40,7 +42,7 @@ const Form = ({ onSendClick }) => {
             </div>
             <div style={{flex:1,backgroundColor:'#f2f2f2',display:'flex'}}>
             <input
-                
+                id="input"
             className='input-box'
                 onChange={(e) => onUrlChange(e)}
             />

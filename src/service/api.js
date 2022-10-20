@@ -1,15 +1,27 @@
 import axios from 'axios';
 
-export const getData = async (data, datajson) => {
+export const getData = async (data, datajson,headerData) => {
     
     const apiType = data.type.toLowerCase(); 
     const apiUrl = data.url;
+    let obj = {};
+    
+    headerData.forEach(data => {
+        
+            obj =  data;
+        
+        }
+    )
 
     try {
         return await axios({
             method: apiType,
             url: apiUrl,
-            body: datajson,
+            body: datajson  ,
+            headers:obj           
+        
+        
+        
           
         })
     } catch (error) {

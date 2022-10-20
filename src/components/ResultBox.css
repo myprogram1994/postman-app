@@ -3,4 +3,68 @@
     padding: 10px 10px 10px 35px;
     border-color: rgb(204, 204, 204);
     height: 500px;
+    outline: none;
+}
+/**/
+
+.responsetable {
+    
+    display: flex;
+    border-bottom: 2px solid #efefef;
+    flex-direction: row;
+  }
+
+  .response-row{
+    
+  font-size: 13px;
+  padding: 10px;
+  }
+  .activebtn {
+    border-bottom: 2px solid #e76537;   
+    background-color: #fff;
+    
+      }
+.content__responseMenuOption.active {
+  border-bottom: 2px solid #f76a3f;
+  color: #000;
+}
+
+
+.response-status{
+ 
+  font-size: 13px;
+ padding:10px 
+}
+
+
+/**/
+.table-conatiner {
+  border: 1px solid #efefef;
+  height: 35px;
+  display: flex;
+
+  flex-direction: row;
+}
+
+
+.inputbox2 {
+  border-right: 1px solid #efefef;
+  
+  margin-top: 5px;
+  width: 45%;
+}
+.inputbox-secand1 {
+  border-right: 1px solid #efefef;
+  float: left;
+  margin-top: 5px;
+  
+  width: 45%;
+}
+
+
+.inputBoxHeader {
+  width: 100%;
+  
+  border: #efefef;
+  outline: none;
 }

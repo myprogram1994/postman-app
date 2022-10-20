@@ -1,11 +1,12 @@
 * {
   color: #6b6b6b;
+
 }
 
 .sidebar {
   background-color: #fff;
   border-right: 2px solid #efefef;
-  height: calc(100% - 100px);
+  height: 100%;
   width: 26%;
   position: fixed;
   z-index: 1;
@@ -124,9 +125,14 @@
 
 .left-side {
   width: 83px;
-  height: calc(100% - 100px);
+  height: 100%;
   border-right: 2px solid #efefef;
 }
+.hoveron:hover{
+    background-color:#9a9898a8;
+    
+}
+
 
 .new_button {
   background-color: #e2e1e1;

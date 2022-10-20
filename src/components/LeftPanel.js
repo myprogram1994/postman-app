@@ -1,14 +1,28 @@
 import "./LeftPanel.css";
 import { useState } from "react";
-import { useContext } from "react";
+import { useContext } from 'react';
 
-import { DataContext } from "../DataFile/DataProvider";
 
-import CollectionTmage from "./CollectionImage";
-const LeftPanel = ({ searchUrl }) => {
+import { DataContext } from '../DataFile/DataProvider';
+const assestImage = "../history.png";
+
+const LeftPanel = ({searchUrl}) => {
   const [leftsidebtn, setleftButton] = useState(6);
-
+  const { data, setData,url,setUrl } = useContext(DataContext);
   const getClassName = (val) => (val === leftsidebtn ? "active1" : "");
+ const  handle=(geturl)=>{
+
+document.getElementById('input').value=geturl
+
+setData({ ...data, url: geturl });
+
+
+
+
+
+
+
+ }
   return (
     <>
       <div className="main-conatiner">
@@ -46,7 +60,7 @@ const LeftPanel = ({ searchUrl }) => {
                   style={{
                     fontFamily: "DM Sans",
                     fontWeight: 400,
-
+                    width:'56%',
                     color: "black",
                   }}
                 >
@@ -55,7 +69,7 @@ const LeftPanel = ({ searchUrl }) => {
 
                 <div
                   style={{
-                    marginLeft: 100,
+                  
                     marginTop: -7,
                     fontFamily: "DM Sans",
                   }}
@@ -76,11 +90,11 @@ const LeftPanel = ({ searchUrl }) => {
 
             <div className="left-side">
               <div id="main2">
-                <div
+                <div 
                   className={`box ${getClassName(1)}`}
                   onClick={() => setleftButton(1)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -102,7 +116,7 @@ const LeftPanel = ({ searchUrl }) => {
                   className={`box ${getClassName(2)}`}
                   onClick={() => setleftButton(2)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -129,14 +143,14 @@ const LeftPanel = ({ searchUrl }) => {
                         fill="#6B6B6B"
                       ></path>
                     </svg>
-                  </i>
+                  </i >
                   <p className="api-text">API's</p>
                 </div>
                 <div
                   className={`box ${getClassName(3)}`}
                   onClick={() => setleftButton(3)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -163,7 +177,7 @@ const LeftPanel = ({ searchUrl }) => {
                   className={`box ${getClassName(4)}`}
                   onClick={() => setleftButton(4)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -189,7 +203,7 @@ const LeftPanel = ({ searchUrl }) => {
                   className={`box ${getClassName(5)}`}
                   onClick={() => setleftButton(5)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -215,7 +229,7 @@ const LeftPanel = ({ searchUrl }) => {
                   className={`box ${getClassName(6)}`}
                   onClick={() => setleftButton(6)}
                 >
-                  <i style={{ lineHeight: 2 }}>
+                  <i style={{lineHeight:2}}>
                     <svg
                       width="16"
                       height="16"
@@ -236,102 +250,100 @@ const LeftPanel = ({ searchUrl }) => {
                   <p className="history-text">History</p>
                 </div>
               </div>
-              <div style={{ marginTop: -315 }}>
-                <div
-                  style={{
-                    flexDirection: "row",
-                    marginLeft: 85,
-                    display: "flex",
-                    marginTop: -2,
-                  }}
-                >
-                  <div>
-                    <input className="input-box2" />
-                  </div>
-                  <div style={{ padding: 4 }}>
-                    <i className="icon-dot">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M1 8C1 6.89543 1.89543 6 3 6C4.10457 6 5 6.89543 5 8C5 9.10457 4.10457 10 3 10C1.89543 10 1 9.10457 1 8ZM3 7C2.44772 7 2 7.44772 2 8C2 8.55228 2.44772 9 3 9C3.55228 9 4 8.55228 4 8C4 7.44772 3.55228 7 3 7Z"
-                          fill="#6B6B6B"
-                        ></path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8ZM8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7Z"
-                          fill="#6B6B6B"
-                        ></path>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13 6C11.8954 6 11 6.89543 11 8C11 9.10457 11.8954 10 13 10C14.1046 10 15 9.10457 15 8C15 6.89543 14.1046 6 13 6ZM12 8C12 7.44772 12.4477 7 13 7C13.5523 7 14 7.44772 14 8C14 8.55228 13.5523 9 13 9C12.4477 9 12 8.55228 12 8Z"
-                          fill="#6B6B6B"
-                        ></path>
-                      </svg>
-                    </i>
-                  </div>
+              <div style={{marginTop:-315}}>
+                <div style={{flexDirection:'row',marginLeft:85,display:'flex',marginTop:-2,width:'20%'}}>
 
-                  <div></div>
+                
+            <div>
+            <input className="input-box2"/>
+            </div>
+            <div style={{padding:4}}>
+                          <i className="icon-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 8C1 6.89543 1.89543 6 3 6C4.10457 6 5 6.89543 5 8C5 9.10457 4.10457 10 3 10C1.89543 10 1 9.10457 1 8ZM3 7C2.44772 7 2 7.44772 2 8C2 8.55228 2.44772 9 3 9C3.55228 9 4 8.55228 4 8C4 7.44772 3.55228 7 3 7Z"
+                  fill="#6B6B6B"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8ZM8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7Z"
+                  fill="#6B6B6B"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13 6C11.8954 6 11 6.89543 11 8C11 9.10457 11.8954 10 13 10C14.1046 10 15 9.10457 15 8C15 6.89543 14.1046 6 13 6ZM12 8C12 7.44772 12.4477 7 13 7C13.5523 7 14 7.44772 14 8C14 8.55228 13.5523 9 13 9C12.4477 9 12 8.55228 12 8Z"
+                  fill="#6B6B6B"
+                ></path>
+              </svg>
+            </i>
+            </div>
+
+            <div>
+                  </div>
                 </div>
-                {searchUrl ? (
-                  searchUrl.map((ele) =>
-                    ele.status == 200 ? (
-                      <div
-                        style={{
-                          flexDirection: "row",
-                          marginLeft: 85,
-                          fontSize: 13,
-                        }}
-                      >
-                        <div style={{ margin: 5 }}>
-                          <span style={{ fontSize: 12, color: "green" }}>
-                            {ele.config.method == "get"
-                              ? ele.config.method.toUpperCase()
-                              : ""}
-                          </span>
-                          <span style={{ fontSize: 12, color: "#e76537" }}>
-                            {ele.config.method == "post"
-                              ? ele.config.method.toUpperCase()
-                              : ""}
-                          </span>
+                <div>
+               {
+               
+          
+               searchUrl!=""?
+              searchUrl.map((ele)=>(
+                ele.status==200?
+                <div  >
+                <div style={{flexDirection:'row',marginLeft:85,fontSize:13,maxWidth:10}}>
+                  
+                  <div 
 
-                          <span
-                            style={{
-                              padding: 5,
-                              whiteSpace: "nowrap",
-                              width: 5,
-                              overflow: "hidden",
-                              textOverflow: "ellipsis",
-                            }}
-                          >
-                            {ele.config.url}
-                          </span>
-                        </div>
-                      </div>
-                    ) : (
-                      ""
-                    )
-                  )
-                ) : (
-                  <div
-                    style={{
-                      flexDirection: "row",
-                      marginLeft: 85,
-                      marginTop: -316,
-                    }}
-                  >
-                    <CollectionTmage />
+                ><div      className="hoveron" style={{width:250,textOverflow:'ellipsis',overflow:'hidden',whiteSpace:'nowrap',margin:10}}>
+                  <span style={{fontSize:12,color:'green'}}>{ele.config.method=="get" ?ele.config.method.toUpperCase():""}
+                  </span>
+                  <span   className="hoveron" style={{fontSize:12,color:'#e76537'}}>{ele.config.method=="post" ?ele.config.method.toUpperCase():""}</span>
+                  <span style={{fontSize:12,color:'green'}}>{ele.config.method=="put" ?ele.config.method.toUpperCase():""}
+                  </span>
+                  <span style={{fontSize:12,color:'green'}}>{ele.config.method=="delete" ?ele.config.method.toUpperCase():""}
+                  </span>
+                 
+                  <span   
+             
+                  onClick={() => handle(ele.config.url)}
+                  style={{padding:5,
+                  whiteSpace: 'nowrap',
+                  width:5,
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis'
+                  
+                  }}>
+                    {ele.config.url}</span></div></div>
+
+
+
                   </div>
-                )}
-              </div>
+                  </div>
+                  :""
+              )):
+              <div style={{flexDirection:'row', marginLeft:85}}>
+              <div>
+  
+  <img
+    src={assestImage}
+    style={{ width: 220, height: 200,padding:22,paddingTop:80 }}
+  />
+  </div>
+              
+                            
+                          </div>
+}  
+</div>
+</div>
             </div>
           </div>
         </div>
